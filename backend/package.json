@@ -1,0 +1,26 @@
+{
+  "name": "task-tracker-service",
+  "version": "1.0.0",
+  "description": "task tracker",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "tracker",
+    "service",
+    "structure"
+  ],
+  "author": "saibabanadh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "swagger-ui-express": "^4.1.2"
+  },
+  "devDependencies": {}
+}

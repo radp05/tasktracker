@@ -1,0 +1,11 @@
+#frontend
+frontend/node_modules
+frontend/certs
+
+#backend
+backend/node_modules
+backend/logs
+
+#others
+mongodb/data
+.git

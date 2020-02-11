@@ -1,7 +1,40 @@
-<div class="flex-container">
-<div class="flex-item">task1</div>
-<div class="flex-item">task2</div>
-<div class="flex-item">task3</div>
-<div class="flex-item">task4</div>
-<div class="flex-item">task5</div>
+<div style="text-align:center">
+    <h1>
+        Welcome to {{title}}!
+    </h1>
+</div>
+
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+
+
+    </button>
+    <button mat-menu-item>
+        <mat-icon>account_circle</mat-icon>
+        <span>Account</span>
+    </button>
+</mat-menu>
+
+
+
+
+<!-- <div (click)="location.href='#'"> -->
+<div class="flex-container" fxFlex="20%">
+
+    <div class="flex-item" *ngFor="let project of projects">
+        <mat-card class="item" (click)="doStuff()">
+            <mat-card-title>{{project.name}}</mat-card-title >
+            <mat-card-subtitle>Created by:{{project.createdBy}}</mat-card-subtitle>
+            <mat-card-content routerLink = "#">{{project.description}}</mat-card-content >
+            
+            <mat-card-content ></mat-card-content>
+            <!-- <mat-card-actions>container for buttons at bottom of card</mat-card-actions> -->
+        </mat-card>
+    </div>
+    <!-- </div> -->
 </div>

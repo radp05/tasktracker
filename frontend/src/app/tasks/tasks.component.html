@@ -1,10 +1,11 @@
 <div style="display: centre;"> 
   <p>Tasks for project</p>
 </div>
-<mat-grid-list cols="1" rowHeight="2:1">
+<mat-grid-list cols="1" rowHeight="1:1" width="70%">
   <mat-grid-tile>
+    <mat-grid-tile-header>header</mat-grid-tile-header>
    
-      <div class="table" style="width: 70%; height: 70%;"> 
+      <div class="table" style="width: 80%; height: 80%;"> 
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
           <ng-container matColumnDef="task">
@@ -20,9 +21,12 @@
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
         </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 
       </div>
+    <mat-grid-tile-footer> footer</mat-grid-tile-footer>
   </mat-grid-tile>
+
   
 
 </mat-grid-list>

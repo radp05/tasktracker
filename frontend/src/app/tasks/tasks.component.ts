@@ -4,7 +4,7 @@ export interface TaskType {
   description:string;
 }
 const TASK_DATA:TaskType[]=[{task:"task1",description:"something"},
-{task:"task2",description:"something"},{task:"task3",description:"something"}]
+{task:"task2",description:"something"},{task:"task3",description:"something"},{task:"task3",description:"something"}]
 
 // const ELEMENT_DATA: PeriodicElement[] = [
 //   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},

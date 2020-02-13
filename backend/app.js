@@ -7,6 +7,14 @@ const helmet = require('helmet');
 const swaggerUi = require('swagger-ui-express');
 const mongoose = require('mongoose');
 
+const passport = require('passport');
+const jsonwebtoken = require('jsonwebtoken');
+const path = require('path');
+const users = require('./controllers/user.controller');
+const task = require('./controllers/task.controller');
+const group = require('./controllers/group.controller');
+
+// require('./config/passport')(passport);
 // Add custom dependencies
 const config = require('./config/config');
 const routes = require('./routes/routes');

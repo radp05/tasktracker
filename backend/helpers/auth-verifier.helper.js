@@ -1,16 +1,21 @@
-const jwt = require("jsonwebtoken");
+var UserModel = require('../models/user.model');
 
-module.exports = (req, res, next) => {
-    let bearerToken = req.headers.authorization.split(' ');
-    jwt.verify(bearerToken[1], process.env.JWT_SECRET, function (err, decoded) {
-        if (err) {
-            res.send("You are not authorized");
-        } else {
-            if ( decoded.resourceIds.includes(process.env.RESOURCE_ID) ) {
-                next()
-            } else {
-                res.send("You are not authorized to access this API");
-            }
-        }
-    });
-  }
+var authHelper = {}
+
+authHelper.verifyUser = async (req,res) => {
+   
+    try {
+        let result = await UserModel.findOne({ userName: req.body.userName, password: req.body.password });
+        return {
+            message: "success",
+            data:result
+        };
+    } catch (err) {
+        return {
+            message: "Internal Error",
+            error: error
+          };
+    } 
+}
+
+module.exports = authHelper;

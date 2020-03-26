@@ -17,10 +17,10 @@ module.exports = (function () {
 //   router.get('/', sampleController.index);
 //   router.get('/home', sampleController.home);
 //   router.post('/login', userController.verifyUser);
-  router.get('/users', userController.getUsers);
-  router.get('/getSingleUser/:id', userController.getOneUser);
-  router.post('/registerUser', userController.registerUser);
-  router.post('/login', userController.login);
+  // router.get('/users', userController.getUsers);
+  // router.get('/getSingleUser/:id', userController.getOneUser);
+  // router.post('/registerUser', userController.registerUser);
+  // router.post('/login', userController.login);
 
 
 

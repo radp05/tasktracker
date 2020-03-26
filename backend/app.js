@@ -91,7 +91,7 @@ app.use(`${config.API_BASE}/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerD
 
 // Add service routes
 // app.use(authVerifier);
-app.use(config.API_BASE, routes);
+app.use('/tt', routes);
 
 // Hanlde uncaughtExceptions here to prevent termination
 process.on('uncaughtException', function(error) {

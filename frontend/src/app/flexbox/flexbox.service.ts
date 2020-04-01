@@ -8,6 +8,8 @@ export class flexboxService {
         {"name":"javascript-design patterns","createdBy":"kyle simpson","description":"a convenient way to understand patterns in javascript"},
         {"name":"javascript-design patterns","createdBy":"kyle simpson","description":"a convenient way to understand patterns in javascript"},
         {"name":"javascript-design patterns","createdBy":"kyle simpson","description":"a convenient way to understand patterns in javascript "},
+        {"name":"javascript-design patterns","createdBy":"kyle simpson","description":"a convenient way to understand patterns in javascript "},
+        {"name":"javascript-design patterns","createdBy":"kyle simpson","description":"a convenient way to understand patterns in javascript "},
         {"name":"javascript-design patterns","createdBy":"kyle simpson","description":"a convenient way to understand patterns in javascript "}
         
 
